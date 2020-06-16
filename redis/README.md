@@ -1,0 +1,1 @@
+Run redis-server on Windows startup inside WSL: [Gist](https://gist.github.com/cromat/a065136db5bdc40f21dc139567ad0340)
