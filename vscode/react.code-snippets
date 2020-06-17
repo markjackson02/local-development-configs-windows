@@ -1,0 +1,27 @@
+{
+	"React Component": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "rc",
+		"body": ["import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const $TM_FILENAME_BASE = (props) => {",
+				"\tconst { } = props;",
+				"\treturn (",
+			"",
+				"\t);",
+			"};",
+			"",
+			"$TM_FILENAME_BASE.propTypes = {",
+			"",
+			"};",
+			"",
+			"$TM_FILENAME_BASE.defaultProps = {",
+			"",
+			"};",
+			"",
+			"export default $TM_FILENAME_BASE;",
+			""],
+		"description": "React component with PropTypes"
+	}
+}
