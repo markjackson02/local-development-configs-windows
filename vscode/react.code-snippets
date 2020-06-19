@@ -1,6 +1,6 @@
 {
 	"React Component": {
-		"scope": "javascript,typescript,javascriptreact",
+		"scope": "javascriptreact",
 		"prefix": "rc",
 		"body": ["import React from 'react';",
 			"import PropTypes from 'prop-types';",
@@ -23,5 +23,29 @@
 			"export default $TM_FILENAME_BASE;",
 			""],
 		"description": "React component with PropTypes"
+	},
+	"Storybook Story": {
+		"scope": "javascriptreact",
+		"prefix": "story",
+		"body": [
+			"import React from 'react';",
+			"import ${TM_FILENAME_BASE/(.*)\\..+/$1/} from './${TM_FILENAME_BASE/(.*)\\..+/$1/}';",
+			"",
+			"const name = '${TM_FILENAME_BASE/(.*)\\..+/$1/}';",
+			"",
+			"export default {",
+			"\ttitle: name,",
+			"};",
+			"",
+			"export const toStorybook = () => (",
+				"\t\t<${TM_FILENAME_BASE/(.*)\\..+/$1/} />",
+			");",
+			"",
+			"toStorybook.story = {",
+			"\tname,",
+			"};",
+			""
+		],
+		"description": "Storybook story"
 	}
 }
